@@ -2,9 +2,14 @@ import 'package:deeplink_demo/screens/blue.dart';
 import 'package:deeplink_demo/screens/red.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({super.key});
 
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +23,7 @@ class Home extends StatelessWidget {
           const Center(
             child: Text(
               'Welcome to Flutter DeepLinking tutorial!',
+              textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
