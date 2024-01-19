@@ -21,7 +21,13 @@ class MyApp extends StatelessWidget {
         ),
         GoRoute(
           path: '/blue',
-          builder: (context, state) => const Blue(),
+          builder: (context, state) {
+            final params = state.pathParameters;
+            final id = params['id'];
+            return Blue(
+              id: id.toString(),
+            );
+          },
         ),
         GoRoute(
           path: '/red',

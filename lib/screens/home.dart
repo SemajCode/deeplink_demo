@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => const Blue(),
+                  builder: (context) => const Blue(id: '123'),
                 ),
               );
             },
