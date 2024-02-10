@@ -12,6 +12,14 @@ class Blue extends StatelessWidget {
         title: const Text('Blue Screen'),
         centerTitle: true,
       ),
+      body: Center(
+        child: Text(
+          'ID: $id',
+          style: const TextStyle(
+            fontSize: 28,
+          ),
+        ),
+      ),
       backgroundColor: Colors.blue,
     );
   }

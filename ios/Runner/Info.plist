@@ -47,7 +47,7 @@
 	<true/>
 	<key>CFBundleURLTypes</key>
 	<array>
-		<dict>
+	    <dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
 			<string>https</string>
